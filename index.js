@@ -10,7 +10,7 @@ async function loadDB() {
     const db = new SQL.Database(new Uint8Array(buffer));
 
     // Run a SQL query
-    const result = db.exec("SELECT * FROM Fuentes");
+    const result = db.exec("SELECT * FROM Alternativas");
 
     // Render query results into an HTML table
     if (result.length > 0) {
